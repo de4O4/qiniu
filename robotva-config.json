@@ -1,0 +1,84 @@
+{
+  "log_level": "DEBUG",
+  "work_root_dir": "./tasks",
+  "enable_mock_tools": false,
+  "mcp_servers_file": "mcp_servers.local.json",
+  "cases": {
+    "test_set_path": "docs/examples/mcu-regression.md",
+    "spec_path": null,
+    "validate_on_load": true
+  },
+  "vars": {
+    "enabled": true,
+    "vars_file": "docs/examples/vars/mcu/system.yaml",
+    "vars_catalog_file": null
+  },
+  "plan_cache": {
+    "enabled": true,
+    "cache_dir": "./tasks/.plan_cache",
+    "validate_on_load": true,
+    "versioning": {
+      "mode": "single",
+      "max_history": 5
+    },
+    "invalidation": {
+      "auto_detect": true,
+      "content_change": true,
+      "version_change": true,
+      "ttl_days": 30
+    }
+  },
+  "planner": {
+    "type": "openai",
+    "provider_profile": {
+      "profile": "weak_local_model"
+    },
+    "cli": {
+      "cmd": [
+        "claude",
+        "-p",
+        "--model",
+        "haiku"
+      ],
+      "use_bare": true,
+      "explicit_system_prompt": true
+    },
+    "openai": {
+      "api_key": "sk-208ff365cb7f51e44eea107f6254bca5",
+      "base_url": "https://token.cvte.com/v1",
+      "model": "deepseek-v4-flash",
+      "timeout": 1000,
+      "max_tokens": 32768,
+      "max_concurrency": 8,
+      "adaptive_concurrency": true,
+      "adaptive_initial_concurrency": 4,
+      "adaptive_scale_up_successes": 4,
+      "adaptive_cooldown_seconds": 10
+    },
+    "allowlist": [
+      "browser:*",
+      "gui:*"
+    ],
+    "abort_on_fail_force": true,
+    "hierarchical_planning": {
+      "mode": "auto",
+      "large_case_threshold": 30,
+      "step_retry_limit": 2,
+      "step_fragment_max_concurrency": 3
+    }
+  },
+  "implicit_stabilize": {
+    "enabled": true,
+    "default_wait_ms": 1000
+  },
+  "evidence": {
+    "log_level": "DEBUG"
+  },
+  "report": {
+    "format": "markdown"
+  },
+  "gatekeeper": {
+    "validate_artifacts": true,
+    "check_consistency": true
+  }
+}

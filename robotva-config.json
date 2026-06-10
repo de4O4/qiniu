@@ -14,7 +14,7 @@
     "vars_catalog_file": null
   },
   "plan_cache": {
-    "enabled": true,
+    "enabled": false,
     "cache_dir": "./tasks/.plan_cache",
     "validate_on_load": true,
     "versioning": {

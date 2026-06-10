@@ -6,7 +6,7 @@
   "cases": {
     "test_set_path": "docs/examples/mcu-regression.md",
     "spec_path": null,
-    "validate_on_load": true
+    "validate_on_load": false
   },
   "vars": {
     "enabled": true,

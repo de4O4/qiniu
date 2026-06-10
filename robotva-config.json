@@ -1,7 +1,7 @@
 {
   "log_level": "DEBUG",
   "work_root_dir": "./tasks",
-  "enable_mock_tools": false,
+  "enable_mock_tools": true,
   "mcp_servers_file": "mcp_servers.local.json",
   "cases": {
     "test_set_path": "docs/examples/mcu-regression.md",

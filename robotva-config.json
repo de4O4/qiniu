@@ -53,7 +53,7 @@
       "adaptive_concurrency": true,
       "adaptive_initial_concurrency": 4,
       "adaptive_scale_up_successes": 4,
-      "adaptive_cooldown_seconds": 10
+      "adaptive_cooldown_seconds": 1023
     },
     "allowlist": [
       "browser:*",

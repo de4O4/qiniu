@@ -48,7 +48,7 @@
       "base_url": "https://token.cvte.com/v1",
       "model": "deepseek-v4-flash",
       "timeout": 1000,
-      "max_tokens": 32768,
+      "max_tokens": 32763,
       "max_concurrency": 8,
       "adaptive_concurrency": true,
       "adaptive_initial_concurrency": 4,

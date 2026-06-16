@@ -5,35 +5,35 @@
     "endpoint": "http://localhost:8102",
     "timeout_ms": 30000,
     "enabled": true
-  }，
+  },
   {
     "name": "auth",
     "protocol": "http",
     "endpoint": "http://localhost:8080",
     "timeout_ms": 10000,
     "enabled": true
-}，
+},
   {
     "name": "task",
     "protocol": "http",
     "endpoint": "http://localhost:8201",
     "timeout_ms": 30000,
     "enabled": true
-}，
+},
   {
     "name": "file",
     "protocol": "http",
     "endpoint": "http://localhost:8300",
     "timeout_ms": 60000,
     "enabled": true
-}，
+},
   {
     "name": "vector_search",
     "protocol": "http",
     "endpoint": "http://localhost:8410",
     "timeout_ms": 45000,
     "enabled": true
-}，
+},
   {
     "name": "logger",
     "protocol": "http",

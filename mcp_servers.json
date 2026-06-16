@@ -1,0 +1,9 @@
+[
+  {
+    "name": "browser",
+    "protocol": "http",
+    "endpoint": "http://localhost:8102",
+    "timeout_ms": 30000,
+    "enabled": true
+  }
+]

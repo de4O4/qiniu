@@ -40,5 +40,12 @@
     "endpoint": "http://localhost:8505",
     "timeout_ms": 5000,
     "enabled": true
+},
+  {
+    "name": "db_proxy",
+    "protocol": "http",
+    "endpoint": "http://localhost:8722",
+    "timeout_ms": 20000,
+    "enabled": true
 }
 ]

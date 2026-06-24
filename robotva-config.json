@@ -19,7 +19,7 @@
     "validate_on_load": false,
     "versioning": {
       "mode": "single",
-      "max_history": 53
+      "max_history": 99
     },
     "invalidation": {
       "auto_detect": true,
